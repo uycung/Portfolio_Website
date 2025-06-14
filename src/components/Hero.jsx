@@ -24,12 +24,16 @@ const Hero = () => {
                     style={{ background: 'linear-gradient(to right, #007CF0, #00DFD8)' }}>
                     View My Experience
                 </a>
-                 <a href="/resume.pdf" download className="px-6 py-3 font-semibold text-white bg-slate-800/50 border border-slate-700 rounded-lg flex items-center gap-2 transition-colors duration-300 hover:bg-slate-700/50">
+                <a
+                    href={`${import.meta.env.BASE_URL}resume.pdf`} // <--- CHANGE THIS LINE
+                    download
+                    className="px-6 py-3 font-semibold text-white bg-slate-800/50 border border-slate-700 rounded-lg flex items-center gap-2 transition-colors duration-300 hover:bg-slate-700/50"
+                >
                     <Download size={20} />
                     Download Resume
                 </a>
             </div>
-            
+
             {/* Scroll down arrow */}
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
                 <a href="#product-philosophy" className="text-slate-400 hover:text-white transition-colors duration-300">
