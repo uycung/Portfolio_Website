@@ -14,7 +14,8 @@ const PersonalProjects = () => {
     return (
         <section className="py-20 px-4">
             <div className="max-w-5xl mx-auto">
-                <h3 className="text-3xl font-bold text-center mb-12 text-white">Personal Projects & Explorations</h3>
+                <h3 className="text-3xl font-bold text-center mb-4 text-white">Personal Projects & Explorations</h3>
+                <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto mb-12"></div>
                 <div className="grid md:grid-cols-1 gap-8">
                     {personalProjectsData.map((project, index) => (
                          <a href={project.link} target="_blank" rel="noopener noreferrer" key={index} 

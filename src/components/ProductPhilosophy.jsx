@@ -23,7 +23,8 @@ const ProductPhilosophy = () => {
     return (
         <section id="product-philosophy" className="py-20 px-4">
             <div className="max-w-5xl mx-auto">
-                <h3 className="text-3xl font-bold text-center mb-12 text-white">My Product Philosophy</h3>
+                <h3 className="text-3xl font-bold text-center mb-4 text-white">My Product Philosophy</h3>
+                <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto mb-12"></div>
                 <div className="grid md:grid-cols-3 gap-8">
                     {philosophyItems.map((item, index) => (
                         <div key={index} className="bg-slate-800/50 border border-slate-700 p-8 rounded-xl backdrop-blur-sm transition-all duration-300 hover:border-cyan-400/50 hover:-translate-y-1">
